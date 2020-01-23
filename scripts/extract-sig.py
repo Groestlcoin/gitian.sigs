@@ -2,8 +2,8 @@
 # W.J. van der Laan 2015 (license: MIT)
 '''
 Extract detached signature from accidentally attached .asc  file
-  Example: 
-      ./extract-sig.py ./0.10.4rc1-linux/fanquake/bitcoin-linux-0.10-build.assert.asc
+  Example:
+      ./extract-sig.py ./2.18.2-linux/jackielove4u/groestlcoin-linux-2.18.2-build.assert.asc
   Or:
       find -name \*.asc -print0 | xargs -0 -n 1 ./extract-sig.py
 
@@ -50,4 +50,3 @@ finally:
     for x in glob.glob(tempdir+'/*'):
         os.remove(x)
     os.rmdir(tempdir)
-
